@@ -72,17 +72,17 @@ public class Conexion {
 	                Class.forName("oracle.jdbc.driver.OracleDriver"); // solo si quieres forzar el cargador
 
 	                this.conn = DriverManager.getConnection(url, usuario, contraseña);
-	                System.out.println("✅ Conexión abierta: " + this.connectionName);
+	                System.out.println("Conexión abierta: " + this.connectionName);
 
 	                this.reiniciarTemporizadorCierre();
 	            } else {
-	                JOptionPane.showMessageDialog(null, "⚠️ Configuración incompleta. Verifica el archivo XML.", "Error", JOptionPane.ERROR_MESSAGE);
+	                JOptionPane.showMessageDialog(null, " Configuración incompleta. Verifica el archivo XML.", "Error", JOptionPane.ERROR_MESSAGE);
 	                Logger.logError("Configuración incompleta", new IllegalStateException("Faltan datos en XML"));
 	                throw new IllegalStateException("Faltan datos obligatorios en el archivo XML.");
 	            }
 	        }
 	    } catch (HeadlessException | SQLException | ClassNotFoundException e) {
-	        JOptionPane.showMessageDialog(null, "❌ Error de conexión: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+	        JOptionPane.showMessageDialog(null, "Error de conexión: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 	        Logger.logError("Error de conexión Oracle", e);
 	        throw new IllegalStateException("No se pudo conectar a Oracle", e);
 	    }

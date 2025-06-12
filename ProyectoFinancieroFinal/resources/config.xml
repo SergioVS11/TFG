@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users>
+
+<user name="Jorge">
+<userConfig>
+<port>1521</port>
+<userPassword>iMKnVXJjj7zsorsxgvWF+A==</userPassword>
+<instanceBBDD>ORA2</instanceBBDD>
+<userName>og6LNHOeih4NaJXyLxvcOA==</userName>
+<ipServer>192.168.184.1</ipServer>
+</userConfig>
+</user>
+</users>
