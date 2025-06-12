@@ -174,4 +174,4 @@ Aunque hay margen de mejora (eliminar usuarios, editar registros, más funcional
 
 Gracias a su diseño intuitivo y funcionalidades prácticas, puede ser una herramienta clave para optimizar tareas repetitivas en departamentos técnicos, de soporte o administración.
 
->  Agradecimientos especiales a **Francisco Manuel Martín** por su colaboración durante el desarrollo del proyecto.
+
